@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:dm='https://github.com/seattlemethod/common/dm'
+  xmlns:generic='http://xbrl.org/2008/generic'
+  targetNamespace='https://github.com/seattlemethod/common/dm'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='dm-BalanceSheet-rules-def.xml' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='dm-AssetsRollUp-rules-def.xml' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='dm-LiabilitiesAndEquityRollUp-rules-def.xml' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='dm-NetAssetsRollUp-rules-def.xml' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='dm-IncomeStatement-rules-def.xml' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='dm-IncomeStatementAlternative-rules-def.xml' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='dm-ComprehensiveIncomeStatement-rules-def.xml'/>
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='dm-ChangesInEquity-rules-def.xml' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='dm-CashFlowStatement-rules-def.xml' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='dm-NetCashFlowRollUp-rules-def.xml' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='dm-AssetsRollForward-rules-def.xml' />
+
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../disclosures-topics/disclosures-lab.xml' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../base-taxonomy/common-lab.xml' />
+
+
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../disclosures-topics/disclosures-doc.xml' />
+
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+</schema>

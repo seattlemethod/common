@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:dm-elr='https://github.com/seattlemethod/common/dm/elr'
+  xmlns:generic='http://xbrl.org/2008/generic'
+  targetNamespace='https://github.com/seattlemethod/common/dm/elr'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+
+         <link:roleType roleURI='https://github.com/seattlemethod/common/dm/elr/role/DisclosureMechanics/BalanceSheet' id='BalanceSheet'>
+             <link:definition>Balance Sheet</link:definition>
+             <link:usedOn>link:presentationLink</link:usedOn>
+             <link:usedOn>link:calculationLink</link:usedOn>
+             <link:usedOn>link:definitionLink</link:usedOn>
+             <link:usedOn>generic:link</link:usedOn>
+         </link:roleType>
+         <link:roleType roleURI='https://github.com/seattlemethod/common/dm/elr/role/DisclosureMechanics/IncomeStatement' id='IncomeStatement'>
+             <link:definition>Income Statement</link:definition>
+             <link:usedOn>link:presentationLink</link:usedOn>
+             <link:usedOn>link:calculationLink</link:usedOn>
+             <link:usedOn>link:definitionLink</link:usedOn>
+             <link:usedOn>generic:link</link:usedOn>
+         </link:roleType>
+         <link:roleType roleURI='https://github.com/seattlemethod/common/dm/elr/role/DisclosureMechanics/ChangesInEquity' id='ChangesInEquity'>
+             <link:definition>Changes in Equity</link:definition>
+             <link:usedOn>link:presentationLink</link:usedOn>
+             <link:usedOn>link:calculationLink</link:usedOn>
+             <link:usedOn>link:definitionLink</link:usedOn>
+             <link:usedOn>generic:link</link:usedOn>
+         </link:roleType>
+
+
+
+         <link:roleType roleURI='https://github.com/seattlemethod/common/dm/elr/role/DisclosureMechanics/NetAssetsRollUp' id='NetAssetsRollUp'>
+             <link:definition>Net Assets Roll Up</link:definition>
+             <link:usedOn>link:presentationLink</link:usedOn>
+             <link:usedOn>link:calculationLink</link:usedOn>
+             <link:usedOn>link:definitionLink</link:usedOn>
+             <link:usedOn>generic:link</link:usedOn>
+         </link:roleType>
+         <link:roleType roleURI='https://github.com/seattlemethod/common/dm/elr/role/DisclosureMechanics/AssetsRollUp' id='AssetsRollUp'>
+             <link:definition>Assets Roll Up</link:definition>
+             <link:usedOn>link:presentationLink</link:usedOn>
+             <link:usedOn>link:calculationLink</link:usedOn>
+             <link:usedOn>link:definitionLink</link:usedOn>
+             <link:usedOn>generic:link</link:usedOn>
+         </link:roleType>
+         <link:roleType roleURI='https://github.com/seattlemethod/common/dm/elr/role/DisclosureMechanics/LiabilitiesAndEquityRollUp' id='LiabilitiesAndEquityRollUp'>
+             <link:definition>Liabilities and Equity Roll Up</link:definition>
+             <link:usedOn>link:presentationLink</link:usedOn>
+             <link:usedOn>link:calculationLink</link:usedOn>
+             <link:usedOn>link:definitionLink</link:usedOn>
+             <link:usedOn>generic:link</link:usedOn>
+         </link:roleType>
+         <link:roleType roleURI='https://github.com/seattlemethod/common/dm/elr/role/DisclosureMechanics/IncomeStatementAlternative' id='IncomeStatementAlternative'>
+             <link:definition>Income Statement Alternative</link:definition>
+             <link:usedOn>link:presentationLink</link:usedOn>
+             <link:usedOn>link:calculationLink</link:usedOn>
+             <link:usedOn>link:definitionLink</link:usedOn>
+             <link:usedOn>generic:link</link:usedOn>
+         </link:roleType>
+         <link:roleType roleURI='https://github.com/seattlemethod/common/dm/elr/role/DisclosureMechanics/ComprehensiveIncomeStatement' id='ComprehensiveIncomeStatement'>
+             <link:definition>Comprehensive Income Statement</link:definition>
+             <link:usedOn>link:presentationLink</link:usedOn>
+             <link:usedOn>link:calculationLink</link:usedOn>
+             <link:usedOn>link:definitionLink</link:usedOn>
+             <link:usedOn>generic:link</link:usedOn>
+         </link:roleType>
+         <link:roleType roleURI='https://github.com/seattlemethod/common/dm/elr/role/DisclosureMechanics/CashFlowStatement' id='CashFlowStatement'>
+             <link:definition>Cash Flow Statement</link:definition>
+             <link:usedOn>link:presentationLink</link:usedOn>
+             <link:usedOn>link:calculationLink</link:usedOn>
+             <link:usedOn>link:definitionLink</link:usedOn>
+             <link:usedOn>generic:link</link:usedOn>
+         </link:roleType>
+         <link:roleType roleURI='https://github.com/seattlemethod/common/dm/elr/role/DisclosureMechanics/NetCashFlowRollUp' id='NetCashFlowRollUp'>
+             <link:definition>Net Cash Flow Roll Up</link:definition>
+             <link:usedOn>link:presentationLink</link:usedOn>
+             <link:usedOn>link:calculationLink</link:usedOn>
+             <link:usedOn>link:definitionLink</link:usedOn>
+             <link:usedOn>generic:link</link:usedOn>
+         </link:roleType>
+         <link:roleType roleURI='https://github.com/seattlemethod/common/dm/elr/role/DisclosureMechanics/AssetsRollForward' id='AssetsRollForward'>
+             <link:definition>Assets Roll Forward</link:definition>
+             <link:usedOn>link:presentationLink</link:usedOn>
+             <link:usedOn>link:calculationLink</link:usedOn>
+             <link:usedOn>link:definitionLink</link:usedOn>
+             <link:usedOn>generic:link</link:usedOn>
+         </link:roleType>
+
+
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+</schema>
