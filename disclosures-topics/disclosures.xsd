@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:disclosures="https://github.com/seattlemethod/common/disclosures"
+  targetNamespace="https://github.com/seattlemethod/common/disclosures"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="https://github.com/seattlemethod/common/disclosures/role/Disclosures" id="Disclosures">
+        <link:definition>Disclosures</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="disclosures-lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Label Links, all" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="disclosures-pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Presentation Links, all" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <complexType name="disclosureItemType">
+    <simpleContent>
+      <restriction base="xbrli:tokenItemType">
+        <attributeGroup ref="xbrli:nonNumericItemAttrs" />
+      </restriction>
+    </simpleContent>
+  </complexType>
+  <element id="disclosures_AssetsRollForward" name="AssetsRollForward" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_AssetsRollUp" name="AssetsRollUp" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_BalanceSheet" name="BalanceSheet" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+
+  <element id="disclosures_BalanceSheetClassified" name="BalanceSheetClassified" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_BalanceSheetOrderOfLiquidity" name="BalanceSheetOrderOfLiquidity" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_BalanceSheetLiquidationBasis" name="BalanceSheetLiquidationBasis" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+
+  <element id="disclosures_CashFlowStatement" name="CashFlowStatement" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_ChangesInEquity" name="ChangesInEquity" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_IncomeStatement" name="IncomeStatement" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_IncomeStatementAlternative" name="IncomeStatementAlternative" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_ComprehensiveIncomeStatement" name="ComprehensiveIncomeStatement" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_DisclosuresAbstract" name="DisclosuresAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="disclosures_LiabilitiesAndEquityRollUp" name="LiabilitiesAndEquityRollUp" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_NetAssetsRollUp" name="NetAssetsRollUp" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_NetCashFlowRollUp" name="NetCashFlowRollUp" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+</schema>

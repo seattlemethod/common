@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation=" http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_AssetsRollForward" xlink:label="disclosures_AssetsRollForward" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_AssetsRollForward" xlink:to="disclosures_AssetsRollForward_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_AssetsRollForward_lbl" xml:lang="en-US">Assets Roll Forward</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_AssetsRollUp" xlink:label="disclosures_AssetsRollUp" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_AssetsRollUp" xlink:to="disclosures_AssetsRollUp_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_AssetsRollUp_lbl" xml:lang="en-US">Assets Roll Up</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_BalanceSheet" xlink:label="disclosures_BalanceSheet" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_BalanceSheet" xlink:to="disclosures_BalanceSheet_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_BalanceSheet_lbl" xml:lang="en-US">Balance Sheet</label>
+
+
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_BalanceSheetClassified" xlink:label="disclosures_BalanceSheetClassified" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_BalanceSheetClassified" xlink:to="disclosures_BalanceSheetClassified_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_BalanceSheetClassified_lbl" xml:lang="en-US">Balance Sheet, Classified</label>
+
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_BalanceSheetOrderOfLiquidity" xlink:label="disclosures_BalanceSheetOrderOfLiquidity" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_BalanceSheetOrderOfLiquidity" xlink:to="disclosures_BalanceSheetOrderOfLiquidity_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_BalanceSheetOrderOfLiquidity_lbl" xml:lang="en-US">Balance Sheet, Order of Liquidity</label>
+
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_BalanceSheetLiquidationBasis" xlink:label="disclosures_BalanceSheetLiquidationBasis" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_BalanceSheetLiquidationBasis" xlink:to="disclosures_BalanceSheetLiquidationBasis_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_BalanceSheetLiquidationBasis_lbl" xml:lang="en-US">Balance Sheet, Liquidition Basis</label>
+
+
+
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_CashFlowStatement" xlink:label="disclosures_CashFlowStatement" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_CashFlowStatement" xlink:to="disclosures_CashFlowStatement_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_CashFlowStatement_lbl" xml:lang="en-US">Cash Flow Statement</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_ChangesInEquity" xlink:label="disclosures_ChangesInEquity" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_ChangesInEquity" xlink:to="disclosures_ChangesInEquity_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_ChangesInEquity_lbl" xml:lang="en-US">Changes in Equity</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_IncomeStatementAlternative" xlink:label="disclosures_IncomeStatementAlternative" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_IncomeStatementAlternative" xlink:to="disclosures_IncomeStatementAlternative_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_IncomeStatementAlternative_lbl" xml:lang="en-US">Income Statement Alternative</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_ComprehensiveIncomeStatement" xlink:label="disclosures_ComprehensiveIncomeStatement" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_ComprehensiveIncomeStatement" xlink:to="disclosures_ComprehensiveIncomeStatement_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_ComprehensiveIncomeStatement_lbl" xml:lang="en-US">Comprehensive Income Statement</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_IncomeStatement" xlink:label="disclosures_IncomeStatement" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_IncomeStatement" xlink:to="disclosures_IncomeStatement_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_IncomeStatement_lbl" xml:lang="en-US">Income Statement</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_DisclosuresAbstract" xlink:label="disclosures_DisclosuresAbstract" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_DisclosuresAbstract" xlink:to="disclosures_DisclosuresAbstract_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_DisclosuresAbstract_lbl" xml:lang="en-US">Disclosures [Abstract]</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_LiabilitiesAndEquityRollUp" xlink:label="disclosures_LiabilitiesAndEquityRollUp" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_LiabilitiesAndEquityRollUp" xlink:to="disclosures_LiabilitiesAndEquityRollUp_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_LiabilitiesAndEquityRollUp_lbl" xml:lang="en-US">Liabilities and Equity Roll Up</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_NetAssetsRollUp" xlink:label="disclosures_NetAssetsRollUp" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_NetAssetsRollUp" xlink:to="disclosures_NetAssetsRollUp_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_NetAssetsRollUp_lbl" xml:lang="en-US">Net Assets Roll Up</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_NetCashFlowRollUp" xlink:label="disclosures_NetCashFlowRollUp" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_NetCashFlowRollUp" xlink:to="disclosures_NetCashFlowRollUp_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_NetCashFlowRollUp_lbl" xml:lang="en-US">Net Cash Flow Roll Up</label>
+  </labelLink>
+</linkbase>
