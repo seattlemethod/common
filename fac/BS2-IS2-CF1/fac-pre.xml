@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation=" http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <roleRef xlink:type="simple" xlink:href="fac.xsd#BalanceSheetLiquidation" roleURI="https://github.com/seattlemethod/common/fac/BalanceSheetLiquidation" />
+  <roleRef xlink:type="simple" xlink:href="fac.xsd#ComprehensiveIncome2" roleURI="https://github.com/seattlemethod/common/fac/ComprehensiveIncome2" />
+  <roleRef xlink:type="simple" xlink:href="fac.xsd#CashFlowsStatement" roleURI="https://github.com/seattlemethod/common/fac/CashFlowsStatement" />
+
+  <presentationLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/common/fac/BalanceSheetLiquidation">
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_BalanceSheetClassifiedHypercube" xlink:label="fac_BalanceSheetClassifiedHypercube" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_BalanceSheetClassifiedLineItems" xlink:label="fac_BalanceSheetClassifiedLineItems" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_BalanceSheetClassifiedHypercube" xlink:to="fac_BalanceSheetClassifiedLineItems" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_BalanceSheetArithmetic" xlink:label="fac_BalanceSheetArithmetic" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_BalanceSheetClassifiedLineItems" xlink:to="fac_BalanceSheetArithmetic" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Assets" xlink:label="fac_Assets" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_BalanceSheetArithmetic" xlink:to="fac_Assets" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Liabilities" xlink:label="fac_Liabilities" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_BalanceSheetArithmetic" xlink:to="fac_Liabilities" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetAssets" xlink:label="fac_NetAssets" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_BalanceSheetArithmetic" xlink:to="fac_NetAssets" order="3" use="optional" />
+  </presentationLink>
+
+
+  <presentationLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/common/fac/ComprehensiveIncome2">
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_ComprehensiveIncomeHypercube" xlink:label="fac_ComprehensiveIncomeHypercube" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_ComprehensiveIncomeLineItems" xlink:label="fac_ComprehensiveIncomeLineItems" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_ComprehensiveIncomeHypercube" xlink:to="fac_ComprehensiveIncomeLineItems" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_ComprehensiveIncomeRollUp" xlink:label="fac_ComprehensiveIncomeRollUp" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_ComprehensiveIncomeLineItems" xlink:to="fac_ComprehensiveIncomeRollUp" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeFromNormalActivitiesOfEntity" xlink:label="fac_IncomeFromNormalActivitiesOfEntity" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_ComprehensiveIncomeRollUp" xlink:to="fac_IncomeFromNormalActivitiesOfEntity" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" xlink:label="fac_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_ComprehensiveIncomeRollUp" xlink:to="fac_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_ComprehensiveIncome" xlink:label="fac_ComprehensiveIncome" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_ComprehensiveIncomeRollUp" xlink:to="fac_ComprehensiveIncome" order="5" use="optional" />
+  </presentationLink>
+
+
+  <presentationLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/common/fac/CashFlowsStatement">
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_CashFlowStatementHypercube" xlink:label="fac_CashFlowStatementHypercube" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_CashFlowStatementLineItems" xlink:label="fac_CashFlowStatementLineItems" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_CashFlowStatementHypercube" xlink:to="fac_CashFlowStatementLineItems" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlowRollUp" xlink:label="fac_NetCashFlowRollUp" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_CashFlowStatementLineItems" xlink:to="fac_NetCashFlowRollUp" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlowOperating" xlink:label="fac_NetCashFlowOperating" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetCashFlowRollUp" xlink:to="fac_NetCashFlowOperating" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlowFinancing" xlink:label="fac_NetCashFlowFinancing" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetCashFlowRollUp" xlink:to="fac_NetCashFlowFinancing" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlowInvesting" xlink:label="fac_NetCashFlowInvesting" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetCashFlowRollUp" xlink:to="fac_NetCashFlowInvesting" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlow" xlink:label="fac_NetCashFlow" />
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetCashFlowRollUp" xlink:to="fac_NetCashFlow" order="4" use="optional" />
+  </presentationLink>
+
+
+</linkbase>

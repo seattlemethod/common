@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation=" http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <roleRef xlink:type="simple" xlink:href="fac.xsd#BalanceSheetLiquidation" roleURI="https://github.com/seattlemethod/common/fac/BalanceSheetLiquidation" />
+  <roleRef xlink:type="simple" xlink:href="fac.xsd#ComprehensiveIncome2" roleURI="https://github.com/seattlemethod/common/fac/ComprehensiveIncome2" />
+  <roleRef xlink:type="simple" xlink:href="fac.xsd#CashFlowsStatement" roleURI="https://github.com/seattlemethod/common/fac/CashFlowsStatement" />
+
+  <calculationLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/common/fac/BalanceSheetLiquidation">
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetAssets" xlink:label="fac_NetAssets" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Assets" xlink:label="fac_Assets" />
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_NetAssets" xlink:to="fac_Assets" order="1" weight="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Liabilities" xlink:label="fac_Liabilities" />
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_NetAssets" xlink:to="fac_Liabilities" order="2" weight="-1" use="optional" />
+  </calculationLink>
+
+
+  <calculationLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/common/fac/ComprehensiveIncome2">
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_ComprehensiveIncome" xlink:label="fac_ComprehensiveIncome" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeFromNormalActivitiesOfEntity" xlink:label="fac_IncomeFromNormalActivitiesOfEntity" />
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_ComprehensiveIncome" xlink:to="fac_IncomeFromNormalActivitiesOfEntity" order="1" weight="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" xlink:label="fac_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" />
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_ComprehensiveIncome" xlink:to="fac_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" order="2" weight="1" use="optional" />
+  </calculationLink>
+
+
+
+  <calculationLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/common/fac/CashFlowsStatement">
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlow" xlink:label="fac_NetCashFlow" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlowOperating" xlink:label="fac_NetCashFlowOperating" />
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_NetCashFlow" xlink:to="fac_NetCashFlowOperating" order="1" weight="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlowFinancing" xlink:label="fac_NetCashFlowFinancing" />
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_NetCashFlow" xlink:to="fac_NetCashFlowFinancing" order="2" weight="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlowInvesting" xlink:label="fac_NetCashFlowInvesting" />
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_NetCashFlow" xlink:to="fac_NetCashFlowInvesting" order="3" weight="1" use="optional" />
+  </calculationLink>
+
+</linkbase>
