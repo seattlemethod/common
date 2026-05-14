@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 4/13/2023 1:55:40 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='common-roles.xsd#NetAssets' roleURI='https://github.com/seattlemethod/common/role/NetAssets' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/common/role/NetAssets">
+	<loc xlink:type="locator" xlink:href="common.xsd#common_NetAssetsHypercube" xlink:label="common_NetAssetsHypercube" xlink:title="presentation: common_NetAssetsHypercube to common_HypercubeLineItems"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_HypercubeLineItems" xlink:label="common_HypercubeLineItems" xlink:title="presentation: common_NetAssetsHypercube to common_HypercubeLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_NetAssetsHypercube" xlink:to="common_HypercubeLineItems" xlink:title="presentation: common_NetAssetsHypercube to common_HypercubeLineItems" order="1" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_NetAssetsRollUp" xlink:label="common_NetAssetsRollUp" xlink:title="presentation: common_HypercubeLineItems to common_NetAssetsRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_HypercubeLineItems" xlink:to="common_NetAssetsRollUp" xlink:title="presentation: common_HypercubeLineItems to common_NetAssetsRollUp" order="1" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_Assets" xlink:label="common_Assets" xlink:title="presentation: common_NetAssetsRollUp to common_Assets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_NetAssetsRollUp" xlink:to="common_Assets" xlink:title="presentation: common_NetAssetsRollUp to common_Assets" order="3" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_Liabilities" xlink:label="common_Liabilities" xlink:title="presentation: common_NetAssetsRollUp to common_Liabilities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_NetAssetsRollUp" xlink:to="common_Liabilities" xlink:title="presentation: common_NetAssetsRollUp to common_Liabilities" order="4" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_NetAssets" xlink:label="common_NetAssets" xlink:title="presentation: common_NetAssetsRollUp to common_NetAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_NetAssetsRollUp" xlink:to="common_NetAssets" xlink:title="presentation: common_NetAssetsRollUp to common_NetAssets" order="5" priority="1" use="optional"/>
+</presentationLink>
+</link:linkbase>

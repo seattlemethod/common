@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 4/13/2023 1:55:40 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='common-roles.xsd#IncomeStatement' roleURI='https://github.com/seattlemethod/common/role/IncomeStatement' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/common/role/IncomeStatement">
+	<loc xlink:type="locator" xlink:href="common.xsd#common_IncomeStatementHypercube" xlink:label="common_IncomeStatementHypercube" xlink:title="presentation: common_IncomeStatementHypercube to common_HypercubeLineItems"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_HypercubeLineItems" xlink:label="common_HypercubeLineItems" xlink:title="presentation: common_IncomeStatementHypercube to common_HypercubeLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_IncomeStatementHypercube" xlink:to="common_HypercubeLineItems" xlink:title="presentation: common_IncomeStatementHypercube to common_HypercubeLineItems" order="11" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_NetIncomeRollUp" xlink:label="common_NetIncomeRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_HypercubeLineItems" xlink:to="common_NetIncomeRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_Revenues" xlink:label="common_Revenues" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_Revenues"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_NetIncomeRollUp" xlink:to="common_Revenues" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_Revenues" order="1" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_Expenses" xlink:label="common_Expenses" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_Expenses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" xlink:from="common_NetIncomeRollUp" xlink:to="common_Expenses" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_Expenses" order="2" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_Gains" xlink:label="common_Gains" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_Gains"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_NetIncomeRollUp" xlink:to="common_Gains" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_Gains" order="3" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_Losses" xlink:label="common_Losses" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_Losses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" xlink:from="common_NetIncomeRollUp" xlink:to="common_Losses" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_Losses" order="4" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_NetIncome" xlink:label="common_NetIncome"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_NetIncomeRollUp" xlink:to="common_NetIncome" order="5" use="optional"/>
+</presentationLink>
+</link:linkbase>

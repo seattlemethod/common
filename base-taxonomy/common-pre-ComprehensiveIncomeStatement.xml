@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 4/13/2023 1:55:40 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='common-roles.xsd#ComprehensiveIncomeStatement' roleURI='https://github.com/seattlemethod/common/role/ComprehensiveIncomeStatement' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/common/role/ComprehensiveIncomeStatement">
+	<loc xlink:type="locator" xlink:href="common.xsd#common_ComprehensiveIncomeStatementHypercube" xlink:label="common_ComprehensiveIncomeStatementHypercube" xlink:title="presentation: common_ComprehensiveIncomeStatementHypercube to common_HypercubeLineItems"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_HypercubeLineItems" xlink:label="common_HypercubeLineItems" xlink:title="presentation: common_ComprehensiveIncomeStatementHypercube to common_HypercubeLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_ComprehensiveIncomeStatementHypercube" xlink:to="common_HypercubeLineItems" xlink:title="presentation: common_ComprehensiveIncomeStatementHypercube to common_HypercubeLineItems" order="11" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_ComprehensiveIncomeRollUp" xlink:label="common_ComprehensiveIncomeRollUp" xlink:title="presentation: common_HypercubeLineItems to common_ComprehensiveIncomeRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_HypercubeLineItems" xlink:to="common_ComprehensiveIncomeRollUp" xlink:title="presentation: common_HypercubeLineItems to common_ComprehensiveIncomeRollUp" order="1" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_NetIncome" xlink:label="common_NetIncome" xlink:title="presentation: common_NetIncomeRollUp to common_NetIncome"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_ComprehensiveIncomeRollUp" xlink:to="common_NetIncome" xlink:title="presentation: common_NetIncomeRollUp to common_NetIncome" order="1" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_OtherComprehensiveIncome" xlink:label="common_OtherComprehensiveIncome" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_OtherComprehensiveIncome"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_ComprehensiveIncomeRollUp" xlink:to="common_OtherComprehensiveIncome" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_OtherComprehensiveIncome" order="2" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_ComprehensiveIncome" xlink:label="common_ComprehensiveIncome" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_ComprehensiveIncome"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_ComprehensiveIncomeRollUp" xlink:to="common_ComprehensiveIncome" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_ComprehensiveIncome" order="3" priority="1" use="optional"/>
+</presentationLink>
+</link:linkbase>

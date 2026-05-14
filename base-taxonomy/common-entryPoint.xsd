@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 4/13/2023 1:55:45 PM -->
+<!-- Entry Point Schema -->
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:common-entry='https://github.com/seattlemethod/common/entry'
+  targetNamespace='https://github.com/seattlemethod/common/entry'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-pre-BalanceSheet.xml' xlink:title='01-Balance Sheet' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-pre-NetAssets.xml' xlink:title='02-Net Assets' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-pre-IncomeStatement.xml' xlink:title='03-Income Statement' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-pre-IncomeStatementAlternative.xml' xlink:title='04-Income Statement Alternative' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-pre-ComprehensiveIncomeStatement.xml' xlink:title='05-Comprehensive Income Statement' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-pre-CashFlow.xml' xlink:title='06-Cash Flow Statement' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-pre-ChangesInEquity.xml' xlink:title='07-Changes in Equity' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-cal-BalanceSheet.xml' xlink:title='01-Balance Sheet' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-cal-NetAssets.xml' xlink:title='02-Net Assets' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-cal-IncomeStatement.xml' xlink:title='03-Income Statement' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-cal-IncomeStatementAlternative.xml' xlink:title='04-Income Statement Alternative' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-cal-ComprehensiveIncomeStatement.xml' xlink:title='05-Comprehensive Income Statement' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-cal-CashFlow.xml' xlink:title='06-Cash Flow Statement' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-def-BalanceSheet.xml' xlink:title='01-Balance Sheet' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-def-NetAssets.xml' xlink:title='02-Net Assets' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-def-IncomeStatement.xml' xlink:title='03-Income Statement' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-def-IncomeStatementAlternative.xml' xlink:title='04-Income Statement Alternative' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-def-ComprehensiveIncomeStatement.xml' xlink:title='05-Comprehensive Income Statement' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-def-CashFlow.xml' xlink:title='06-Cash Flow Statement' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-def-ChangesInEquity.xml' xlink:title='07-Changes in Equity' />
+
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-for.xml' />
+
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-lab.xml' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/referenceLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='common-ref.xml' />
+    </appinfo>
+  </annotation>
+<import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<import namespace='https://github.com/seattlemethod/common' schemaLocation='common.xsd' />
+</schema>

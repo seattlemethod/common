@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<linkbase
+  xmlns='http://www.xbrl.org/2003/linkbase'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:ref='http://www.xbrl.org/2004/ref'
+  xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd http://www.xbrl.org/2004/ref http://www.xbrl.org/2004/ref-2004-08-10.xsd'>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='common.xsd#common_Assets' xlink:label='common_Assets' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='common_Assets' xlink:to='common_Assets_lbl' />
+    <reference xlink:type='resource' xlink:label='common_Assets_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>6</ref:Number>
+       <ref:Paragraph>25</ref:Paragraph>
+       <ref:URI>https://www.fasb.org/jsp/FASB/Document_C/DocumentPage?cid=1218220132802&amp;acceptedDisclaimer=true</ref:URI>
+       <ref:URIDate>2020-02-27</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='common.xsd#common_Equity' xlink:label='common_Equity' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='common_Equity' xlink:to='common_Equity_lbl' />
+    <reference xlink:type='resource' xlink:label='common_Equity_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>6</ref:Number>
+       <ref:Paragraph>49</ref:Paragraph>
+       <ref:URI>https://www.fasb.org/jsp/FASB/Document_C/DocumentPage?cid=1218220132802&amp;acceptedDisclaimer=true</ref:URI>
+       <ref:URIDate>2020-02-27</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='common.xsd#common_Liabilities' xlink:label='common_Liabilities' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='common_Liabilities' xlink:to='common_Liabilities_lbl' />
+    <reference xlink:type='resource' xlink:label='common_Liabilities_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>6</ref:Number>
+       <ref:Paragraph>35</ref:Paragraph>
+       <ref:URI>https://www.fasb.org/jsp/FASB/Document_C/DocumentPage?cid=1218220132802&amp;acceptedDisclaimer=true</ref:URI>
+       <ref:URIDate>2020-02-27</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='common.xsd#common_Revenues' xlink:label='common_Revenues' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='common_Revenues' xlink:to='common_Revenues_lbl' />
+    <reference xlink:type='resource' xlink:label='common_Revenues_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>6</ref:Number>
+       <ref:Paragraph>79</ref:Paragraph>
+       <ref:URI>https://www.fasb.org/jsp/FASB/Document_C/DocumentPage?cid=1218220132802&amp;acceptedDisclaimer=true</ref:URI>
+       <ref:URIDate>2020-02-27</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='common.xsd#common_Expenses' xlink:label='common_Expenses' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='common_Expenses' xlink:to='common_Expenses_lbl' />
+    <reference xlink:type='resource' xlink:label='common_Expenses_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>6</ref:Number>
+       <ref:Paragraph>81</ref:Paragraph>
+       <ref:URI>https://www.fasb.org/jsp/FASB/Document_C/DocumentPage?cid=1218220132802&amp;acceptedDisclaimer=true</ref:URI>
+       <ref:URIDate>2020-02-27</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='common.xsd#common_Gains' xlink:label='common_Gains' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='common_Gains' xlink:to='common_Gains_lbl' />
+    <reference xlink:type='resource' xlink:label='common_Gains_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>6</ref:Number>
+       <ref:Paragraph>84</ref:Paragraph>
+       <ref:URI>https://www.fasb.org/jsp/FASB/Document_C/DocumentPage?cid=1218220132802&amp;acceptedDisclaimer=true</ref:URI>
+       <ref:URIDate>2020-02-27</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='common.xsd#common_Losses' xlink:label='common_Losses' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='common_Losses' xlink:to='common_Losses_lbl' />
+    <reference xlink:type='resource' xlink:label='common_Losses_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>6</ref:Number>
+       <ref:Paragraph>84</ref:Paragraph>
+       <ref:URI>https://www.fasb.org/jsp/FASB/Document_C/DocumentPage?cid=1218220132802&amp;acceptedDisclaimer=true</ref:URI>
+       <ref:URIDate>2020-02-27</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='common.xsd#common_ComprehensiveIncome' xlink:label='common_ComprehensiveIncome' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='common_ComprehensiveIncome' xlink:to='common_ComprehensiveIncome_lbl' />
+    <reference xlink:type='resource' xlink:label='common_ComprehensiveIncome_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>6</ref:Number>
+       <ref:Paragraph>79</ref:Paragraph>
+       <ref:URI>https://www.fasb.org/jsp/FASB/Document_C/DocumentPage?cid=1218220132802&amp;acceptedDisclaimer=true</ref:URI>
+       <ref:URIDate>2020-02-27</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='common.xsd#common_DistributionsToOwners' xlink:label='common_DistributionsToOwners' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='common_DistributionsToOwners' xlink:to='common_DistributionsToOwners_lbl' />
+    <reference xlink:type='resource' xlink:label='common_DistributionsToOwners_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>6</ref:Number>
+       <ref:Paragraph>68</ref:Paragraph>
+       <ref:URI>https://www.fasb.org/jsp/FASB/Document_C/DocumentPage?cid=1218220132802&amp;acceptedDisclaimer=true</ref:URI>
+       <ref:URIDate>2020-02-27</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='common.xsd#common_InvestmentsByOwners' xlink:label='common_InvestmentsByOwners' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='common_InvestmentsByOwners' xlink:to='common_InvestmentsByOwners_lbl' />
+    <reference xlink:type='resource' xlink:label='common_InvestmentsByOwners_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>6</ref:Number>
+       <ref:Paragraph>68</ref:Paragraph>
+       <ref:URI>https://www.fasb.org/jsp/FASB/Document_C/DocumentPage?cid=1218220132802&amp;acceptedDisclaimer=true</ref:URI>
+       <ref:URIDate>2020-02-27</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+</linkbase>

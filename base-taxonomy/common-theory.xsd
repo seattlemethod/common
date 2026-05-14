@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2026-05-13 -->
+<!-- Theory Schema -->
+<?xbrlsite name='Source' value='XBRL Site (Azure)'?>
+<?xbrlsite name='CreatedBy' value='Charles Hoffman, CPA'?>
+<?xbrlsite name='CreatedDate' value='2026-05-13'?>
+<?xbrlsite name='ReportingSchemeTitle' value='Common Elements of Financial Statement (Four Statement Model)'?>
+<?xbrlsite name='Description' value='Financial reporting framework which uses the four statement model, includes common elements you would find on a financial statement.  Basically adds cash flow statement and some other things to SFAC6.'?>
+<?xbrlsite name='ReportingStyles' value='../fac/reporting-styles-cm-ref.xml'?>
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+
+  xmlns:disclosures='https://github.com/seattlemethod/common/disclosures'
+  xmlns:dm='https://github.com/seattlemethod/common/dm'
+  xmlns:fac='https://github.com/seattlemethod/common/fac'
+
+  xmlns:common='https://github.com/seattlemethod/common'
+  xmlns:common-entry='https://github.com/seattlemethod/common/entry'
+  xmlns:common-theory='https://github.com/seattlemethod/common/theory'
+  targetNamespace='https://github.com/seattlemethod/common/theory'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../type-subtype/typeSubtype-rules-def.xml' xlink:title='Types' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../reporting-checklist/dr-rules-def.xml' xlink:title='Reporting Checklist' />
+
+
+
+    </appinfo>
+  </annotation>
+<import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+
+<import namespace='https://github.com/seattlemethod/common/entry' schemaLocation='common-entryPoint.xsd' />
+
+<import namespace='https://github.com/seattlemethod/common/fac' schemaLocation='../fac/fac.xsd' />
+<import namespace='https://github.com/seattlemethod/common/disclosures' schemaLocation='../disclosures-topics/disclosures.xsd' />
+<import namespace='https://github.com/seattlemethod/common/dm' schemaLocation='../disclosure-mechanics/dm.xsd' />
+
+
+</schema>

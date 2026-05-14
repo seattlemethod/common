@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 4/13/2023 1:55:40 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='common-roles.xsd#BalanceSheet' roleURI='https://github.com/seattlemethod/common/role/BalanceSheet' xlink:type='simple'/>
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/lrr/arcrole/accounting-arcrole-2023-01-04.xsd#class-subclass' arcroleURI='http://www.xbrl.org/2023/arcrole/class-subclass' />
+<definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/common/role/BalanceSheet">
+	<loc xlink:type="locator" xlink:href="common.xsd#common_HypercubeLineItems" xlink:label="common_HypercubeLineItems"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_BalanceSheetHypercube" xlink:label="common_BalanceSheetHypercube"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="common_HypercubeLineItems" xlink:to="common_BalanceSheetHypercube" order="1" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_CurrentAssets" xlink:label="common_CurrentAssets"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="common_HypercubeLineItems" xlink:to="common_CurrentAssets" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_NoncurrentAssets" xlink:label="common_NoncurrentAssets"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="common_HypercubeLineItems" xlink:to="common_NoncurrentAssets" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_Assets" xlink:label="common_Assets"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="common_HypercubeLineItems" xlink:to="common_Assets" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_CurrentLiabilities" xlink:label="common_CurrentLiabilities"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="common_HypercubeLineItems" xlink:to="common_CurrentLiabilities" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_NoncurrentLiabilities" xlink:label="common_NoncurrentLiabilities"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="common_HypercubeLineItems" xlink:to="common_NoncurrentLiabilities" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_Liabilities" xlink:label="common_Liabilities"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="common_HypercubeLineItems" xlink:to="common_Liabilities" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_EquityAttributableToControllingInterests" xlink:label="common_EquityAttributableToControllingInterests"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="common_HypercubeLineItems" xlink:to="common_EquityAttributableToControllingInterests" order="8" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_EquityAttributableToNoncontrollingInterests" xlink:label="common_EquityAttributableToNoncontrollingInterests"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="common_HypercubeLineItems" xlink:to="common_EquityAttributableToNoncontrollingInterests" order="9" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_Equity" xlink:label="common_Equity"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="common_HypercubeLineItems" xlink:to="common_Equity" order="10" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_LiabilitiesAndEquity" xlink:label="common_LiabilitiesAndEquity"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="common_HypercubeLineItems" xlink:to="common_LiabilitiesAndEquity" order="11" use="optional"/>
+</definitionLink>
+</link:linkbase>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 4/13/2023 1:55:40 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='common-roles.xsd#IncomeStatementAlternative' roleURI='https://github.com/seattlemethod/common/role/IncomeStatementAlternative' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/common/role/IncomeStatementAlternative">
+	<loc xlink:type="locator" xlink:href="common.xsd#common_IncomeStatementAlternativeHypercube" xlink:label="common_IncomeStatementAlternativeHypercube" xlink:title="presentation: common_IncomeStatementAlternativeHypercube to common_HypercubeLineItems"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_HypercubeLineItems" xlink:label="common_HypercubeLineItems" xlink:title="presentation: common_IncomeStatementAlternativeHypercube to common_HypercubeLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_IncomeStatementAlternativeHypercube" xlink:to="common_HypercubeLineItems" xlink:title="presentation: common_IncomeStatementAlternativeHypercube to common_HypercubeLineItems" order="11" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_NetIncomeRollUp" xlink:label="common_NetIncomeRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_HypercubeLineItems" xlink:to="common_NetIncomeRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_IncomeFromNormalActivitiesOfEntity" xlink:label="common_IncomeFromNormalActivitiesOfEntity" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_IncomeFromNormalActivitiesOfEntity"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_NetIncomeRollUp" xlink:to="common_IncomeFromNormalActivitiesOfEntity" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_IncomeFromNormalActivitiesOfEntity" order="1" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" xlink:label="common_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_IncomeFromPeripheralOrIncidentalTransactionsOfEntity"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_NetIncomeRollUp" xlink:to="common_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" xlink:title="presentation: common_ComprehensiveIncomeRollUp to common_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" order="2" priority="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="common.xsd#common_NetIncome" xlink:label="common_NetIncome"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="common_NetIncomeRollUp" xlink:to="common_NetIncome" order="3" use="optional"/>
+</presentationLink>
+</link:linkbase>
