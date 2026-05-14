@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation=" http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Assets" xlink:label="fac_Assets" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_Assets" xlink:to="fac_Assets_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_Assets_lbl" xml:lang="en-US">Assets</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetAssets" xlink:label="fac_NetAssets" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_NetAssets" xlink:to="fac_NetAssets_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_NetAssets_lbl" xml:lang="en-US">Net Assets</label>
+
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_BalanceSheetArithmetic" xlink:label="fac_BalanceSheetArithmetic" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_BalanceSheetArithmetic" xlink:to="fac_BalanceSheetArithmetic_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_BalanceSheetArithmetic_lbl" xml:lang="en-US">Balance Sheet [Arithmetic]</label>
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_BalanceSheetClassifiedHypercube" xlink:label="fac_BalanceSheetClassifiedHypercube" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_BalanceSheetClassifiedHypercube" xlink:to="fac_BalanceSheetClassifiedHypercube_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_BalanceSheetClassifiedHypercube_lbl" xml:lang="en-US">Balance Sheet Classified [Hypercube]</label>
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_BalanceSheetClassifiedLineItems" xlink:label="fac_BalanceSheetClassifiedLineItems" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_BalanceSheetClassifiedLineItems" xlink:to="fac_BalanceSheetClassifiedLineItems_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_BalanceSheetClassifiedLineItems_lbl" xml:lang="en-US">Balance Sheet Classified [Line Items]</label>
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Equity" xlink:label="fac_Equity" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_Equity" xlink:to="fac_Equity_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_Equity_lbl" xml:lang="en-US">Equity</label>
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Liabilities" xlink:label="fac_Liabilities" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_Liabilities" xlink:to="fac_Liabilities_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_Liabilities_lbl" xml:lang="en-US">Liabilities</label>
+
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Revenues" xlink:label="fac_Revenues" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_Revenues" xlink:to="fac_Revenues_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_Revenues_lbl" xml:lang="en-US">Revenues</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Expenses" xlink:label="fac_Expenses" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_Expenses" xlink:to="fac_Expenses_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_Expenses_lbl" xml:lang="en-US">Expenses</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Gains" xlink:label="fac_Gains" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_Gains" xlink:to="fac_Gains_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_Gains_lbl" xml:lang="en-US">Gains</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_Losses" xlink:label="fac_Losses" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_Losses" xlink:to="fac_Losses_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_Losses_lbl" xml:lang="en-US">Losses</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_ComprehensiveIncome" xlink:label="fac_ComprehensiveIncome" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_ComprehensiveIncome" xlink:to="fac_ComprehensiveIncome_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_ComprehensiveIncome_lbl" xml:lang="en-US">Comprehensive Income</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_ComprehensiveIncomeHypercube" xlink:label="fac_ComprehensiveIncomeHypercube" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_ComprehensiveIncomeHypercube" xlink:to="fac_ComprehensiveIncomeHypercube_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_ComprehensiveIncomeHypercube_lbl" xml:lang="en-US">Comprehensive Income [Hypercube]</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_ComprehensiveIncomeLineItems" xlink:label="fac_ComprehensiveIncomeLineItems" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_ComprehensiveIncomeLineItems" xlink:to="fac_ComprehensiveIncomeLineItems_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_ComprehensiveIncomeLineItems_lbl" xml:lang="en-US">Comprehensive Income [Line Items]</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_ComprehensiveIncomeRollUp" xlink:label="fac_ComprehensiveIncomeRollUp" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_ComprehensiveIncomeRollUp" xlink:to="fac_ComprehensiveIncomeRollUp_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_ComprehensiveIncomeRollUp_lbl" xml:lang="en-US">Comprehensive Income [Roll Up]</label>
+
+
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeFromNormalActivitiesOfEntity" xlink:label="fac_IncomeFromNormalActivitiesOfEntity" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_IncomeFromNormalActivitiesOfEntity" xlink:to="fac_IncomeFromNormalActivitiesOfEntity_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_IncomeFromNormalActivitiesOfEntity_lbl" xml:lang="en-US">Income from Normal Activities of Entity</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" xlink:label="fac_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" xlink:to="fac_IncomeFromPeripheralOrIncidentalTransactionsOfEntity_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_IncomeFromPeripheralOrIncidentalTransactionsOfEntity_lbl" xml:lang="en-US">Income from Normal Activities of Entity</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_CashFlowStatementHypercube" xlink:label="fac_CashFlowStatementHypercube" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_CashFlowStatementHypercube" xlink:to="fac_CashFlowStatementHypercube_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_CashFlowStatementHypercube_lbl" xml:lang="en-US">Cash Flow Statement [Hypercube]</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_CashFlowStatementLineItems" xlink:label="fac_CashFlowStatementLineItems" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_CashFlowStatementLineItems" xlink:to="fac_CashFlowStatementLineItems_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_CashFlowStatementLineItems_lbl" xml:lang="en-US">Cash Flow Statement [Line Items]</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlowRollUp" xlink:label="fac_NetCashFlowRollUp" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_NetCashFlowRollUp" xlink:to="fac_NetCashFlowRollUp_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_NetCashFlowRollUp_lbl" xml:lang="en-US">Net Cash Flow [Roll Up]</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlow" xlink:label="fac_NetCashFlow" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_NetCashFlow" xlink:to="fac_NetCashFlow_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_NetCashFlow_lbl" xml:lang="en-US">Net Cash Flow</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlowOperating" xlink:label="fac_NetCashFlowOperating" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_NetCashFlowOperating" xlink:to="fac_NetCashFlowOperating_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_NetCashFlowOperating_lbl" xml:lang="en-US">Net Cash Flow Operating</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlowFinancing" xlink:label="fac_NetCashFlowFinancing" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_NetCashFlowFinancing" xlink:to="fac_NetCashFlowFinancing_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_NetCashFlowFinancing_lbl" xml:lang="en-US">Net Cash Flow Financing</label>
+
+    <loc xlink:type="locator" xlink:href="fac.xsd#fac_NetCashFlowInvesting" xlink:label="fac_NetCashFlowInvesting" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="fac_NetCashFlowInvesting" xlink:to="fac_NetCashFlowInvesting_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="fac_NetCashFlowInvesting_lbl" xml:lang="en-US">Net Cash Flow Investing</label>
+
+  </labelLink>
+</linkbase>
