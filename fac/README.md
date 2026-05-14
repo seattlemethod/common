@@ -1,1 +1,1 @@
-
+IMPORTANT NOTE: Note that the organization of these reporting styles is not optimal.  In this example, each reporting style defines its on FAC taxonomy.  What would be better is if each reporting style shared the FAC taxonomy schema.
